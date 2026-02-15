@@ -65,7 +65,7 @@ const Home = () => {
             </section>
 
             <section className={styles.features}>
-                <div className={styles.featureCard}>
+                <Link to="/coffee-beans" className={styles.featureCard}>
                     <div className={styles.iconWrapper}>
                         <img src={beansIcon} alt="" className={styles.featureIcon} />
                     </div>
@@ -74,9 +74,9 @@ const Home = () => {
                     <p>
                         Learn about coffee origins, plant varieties, and how climate, soil, and processing shape the flavors in your cup.
                     </p>
-                </div>
+                </Link>
 
-                <div className={styles.featureCard}>
+                <Link to="/roasting" className={styles.featureCard}>
                     <div className={styles.iconWrapper}>
                         <img src={roastingIcon} alt="" className={styles.featureIcon} />
                     </div>
@@ -85,9 +85,9 @@ const Home = () => {
                     <p>
                         Explore how different roast levels develop aroma, sweetness, acidity, and body—from light and bright to deep and bold.
                     </p>
-                </div>
+                </Link>
 
-                <div className={styles.featureCard}>
+                <Link to="/grinding" className={styles.featureCard}>
                     <div className={styles.iconWrapper}>
                         <img src={grindingIcon} alt="" className={styles.featureIcon} />
                     </div>
@@ -96,9 +96,9 @@ const Home = () => {
                     <p>
                         Understand grind sizes, consistency, and why the right grind is essential for balanced extraction and better-tasting coffee.
                     </p>
-                </div>
+                </Link>
 
-                <div className={styles.featureCard}>
+                <Link to="/brewing" className={styles.featureCard}>
                     <div className={styles.iconWrapper}>
                         <img src={brewingIcon} alt="" className={styles.featureIcon} />
                     </div>
@@ -107,7 +107,7 @@ const Home = () => {
                     <p>
                         Discover popular brewing methods, ratios, and techniques to brew coffee that matches your taste and style.
                     </p>
-                </div>
+                </Link>
             </section>
 
             {/* Seed to Cup Journey Section */}
