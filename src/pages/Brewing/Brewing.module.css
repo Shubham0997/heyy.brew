@@ -1,0 +1,2075 @@
+/* ─── Page Wrapper ─── */
+.brewing {
+    padding: 0 0 var(--spacing-xl);
+}
+
+/* ─── Hero Section ─── */
+.hero {
+    margin-top: 48px;
+    margin-bottom: var(--spacing-lg);
+    width: 100%;
+}
+
+.heroInner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 460px;
+    background-color: #F5EFE6;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow:
+        0 8px 40px rgba(139, 90, 43, 0.07),
+        0 2px 12px rgba(139, 90, 43, 0.04);
+    position: relative;
+}
+
+/* ─── Left Text Block ─── */
+.heroText {
+    padding: 3.5rem 3rem 3rem 3.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.eyebrow {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.15rem;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    color: #C19A6B;
+    text-transform: uppercase;
+    margin-bottom: 1.25rem;
+    display: block;
+}
+
+.headline {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 4.5rem;
+    font-weight: 700;
+    line-height: 1.15;
+    color: #3B2A1F;
+    margin-bottom: 0.25rem;
+    letter-spacing: 0.02em;
+}
+
+.dash {
+    width: 40px;
+    height: 3px;
+    background-color: #C19A6B;
+    border-radius: 2px;
+    margin: 1.25rem 0;
+}
+
+.subheadline {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 4rem;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #8B5A2B;
+    margin-bottom: 1.75rem;
+    letter-spacing: 0.01em;
+}
+
+.heroParagraph {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.35rem;
+    font-weight: 400;
+    line-height: 1.85;
+    color: #4a3c30;
+    max-width: 420px;
+    margin-bottom: 2rem;
+    opacity: 0.85;
+}
+
+/* ─── Icon Row ─── */
+.iconRow {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.iconItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.iconCircle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: rgba(139, 90, 43, 0.1);
+    color: #8B5A2B;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.iconCircle:hover {
+    box-shadow: 0 0 16px rgba(139, 90, 43, 0.15);
+    transform: scale(1.05);
+}
+
+.iconCircle .material-symbols-outlined {
+    font-size: 22px;
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 300,
+        'GRAD' 0,
+        'opsz' 24;
+}
+
+.iconLabel {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.65rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: #3d3329;
+}
+
+.iconSub {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.6rem;
+    font-weight: 400;
+    color: rgba(90, 77, 66, 0.55);
+    margin-top: -0.25rem;
+}
+
+/* ─── Right Image Block ─── */
+.heroImage {
+    position: relative;
+    overflow: hidden;
+}
+
+.heroImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.imageOverlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right,
+            #F5EFE6 0%,
+            rgba(245, 239, 230, 0.5) 18%,
+            rgba(245, 239, 230, 0.08) 40%,
+            transparent 65%);
+    pointer-events: none;
+}
+
+/* ─── Brewing Basics Section ─── */
+.basicsSection {
+    padding: 4rem 0 5rem;
+}
+
+.basicsHeader {
+    text-align: center;
+    max-width: 580px;
+    margin: 0 auto 3.5rem;
+}
+
+.basicsTitle {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #3d3329;
+    letter-spacing: 0.06em;
+    margin-bottom: 1.25rem;
+}
+
+.basicsSubtitle {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #6b5d52;
+    margin: 0;
+}
+
+.basicsGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.75rem;
+}
+
+.basicsCard {
+    background: #F5EFE6;
+    border-radius: 20px;
+    padding: 2.25rem 1.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    box-shadow:
+        0 4px 20px rgba(139, 90, 43, 0.06),
+        0 1px 6px rgba(139, 90, 43, 0.03);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.basicsCard:hover {
+    transform: translateY(-6px);
+    box-shadow:
+        0 12px 36px rgba(139, 90, 43, 0.1),
+        0 4px 12px rgba(139, 90, 43, 0.06);
+}
+
+.basicsIconCircle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: rgba(139, 90, 43, 0.1);
+    color: #8B5A2B;
+    margin-bottom: 0.5rem;
+}
+
+.basicsIconCircle .material-symbols-outlined {
+    font-size: 22px;
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 300,
+        'GRAD' 0,
+        'opsz' 24;
+}
+
+.basicsCardTitle {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #3d3329;
+    letter-spacing: 0.02em;
+    margin: 0;
+}
+
+.basicsCardDesc {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #5a4d42;
+    margin: 0;
+    flex: 1;
+}
+
+.basicsProTip {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    margin-top: auto;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(139, 90, 43, 0.12);
+}
+
+.proTipLabel {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: #C19A6B;
+}
+
+.proTipText {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 400;
+    line-height: 1.55;
+    color: rgba(90, 77, 66, 0.7);
+    font-style: italic;
+}
+
+/* ─── Water Quality Section ─── */
+.waterSection {
+    padding: 2rem 0 5rem;
+}
+
+.waterInner {
+    background: linear-gradient(135deg, #F5EFE6 0%, #EDE5D8 60%, #E8DFD2 100%);
+    border-radius: 24px;
+    padding: 3.5rem 2.5rem;
+    position: relative;
+    overflow: hidden;
+    border-top: 1px solid rgba(193, 154, 107, 0.15);
+}
+
+.waterInner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(to right,
+            transparent 0%,
+            rgba(193, 154, 107, 0.3) 50%,
+            transparent 100%);
+}
+
+.waterHeader {
+    max-width: 560px;
+    margin-bottom: 3rem;
+}
+
+.waterTitle {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #3d3329;
+    letter-spacing: 0.04em;
+    margin-bottom: 1rem;
+}
+
+.waterSubtitle {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.05rem;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #6b5d52;
+    margin: 0;
+}
+
+.waterGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.75rem;
+}
+
+.waterCard {
+    background: rgba(255, 255, 255, 0.55);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 20px;
+    padding: 2.25rem 1.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    box-shadow:
+        0 4px 20px rgba(139, 90, 43, 0.05),
+        0 1px 6px rgba(139, 90, 43, 0.03);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.waterCard:hover {
+    transform: translateY(-6px);
+    box-shadow:
+        0 12px 36px rgba(139, 90, 43, 0.1),
+        0 4px 14px rgba(139, 90, 43, 0.06),
+        0 0 24px rgba(139, 90, 43, 0.04);
+}
+
+.waterIconCircle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: rgba(100, 140, 180, 0.1);
+    color: #5a7ca0;
+    margin-bottom: 0.5rem;
+}
+
+.waterIconCircle .material-symbols-outlined {
+    font-size: 22px;
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 300,
+        'GRAD' 0,
+        'opsz' 24;
+}
+
+.waterCardTitle {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #3d3329;
+    letter-spacing: 0.02em;
+    margin: 0;
+}
+
+.waterCardDesc {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #5a4d42;
+    margin: 0;
+    flex: 1;
+}
+
+.waterWhy {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    margin-top: auto;
+    padding-top: 0.85rem;
+    border-top: 1px solid rgba(139, 90, 43, 0.1);
+}
+
+.whyLabel {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.55rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: #C19A6B;
+}
+
+.whyText {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.82rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: rgba(90, 77, 66, 0.65);
+    font-style: italic;
+}
+
+/* TDS Indicator */
+.tdsIndicator {
+    margin-top: 1.25rem;
+    padding-top: 0.85rem;
+    border-top: 1px solid rgba(139, 90, 43, 0.08);
+}
+
+.tdsBar {
+    width: 100%;
+    height: 4px;
+    background: rgba(139, 90, 43, 0.12);
+    border-radius: 2px;
+    position: relative;
+    margin-bottom: 0.5rem;
+}
+
+.tdsIdeal {
+    position: absolute;
+    left: 25%;
+    width: 50%;
+    height: 100%;
+    background: #8B5A2B;
+    border-radius: 2px;
+}
+
+.tdsLabels {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.65rem;
+    font-weight: 500;
+    color: rgba(90, 77, 66, 0.45);
+}
+
+.tdsIdealLabel {
+    color: #8B5A2B;
+    font-weight: 600;
+}
+
+/* ─── Extraction Styles Section ─── */
+.extractSection {
+    padding: 3rem 0 5rem;
+}
+
+.extractHeader {
+    text-align: center;
+    max-width: 620px;
+    margin: 0 auto 3.5rem;
+}
+
+.extractTitle {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #3d3329;
+    letter-spacing: 0.06em;
+    margin-bottom: 1.25rem;
+}
+
+.extractSubtitle {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #6b5d52;
+    margin: 0;
+}
+
+.extractGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+}
+
+.extractCard {
+    background: #F5EFE6;
+    padding: 2.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+    border-right: 1px solid rgba(139, 90, 43, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 0;
+}
+
+.extractCard:first-child {
+    border-radius: 20px 0 0 20px;
+}
+
+.extractCard:last-child {
+    border-radius: 0 20px 20px 0;
+    border-right: none;
+}
+
+.extractCard:hover {
+    transform: translateY(-6px);
+    box-shadow:
+        0 12px 36px rgba(139, 90, 43, 0.1),
+        0 4px 12px rgba(139, 90, 43, 0.05);
+    z-index: 1;
+    border-radius: 20px;
+}
+
+.extractIconCircle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: rgba(139, 90, 43, 0.1);
+    color: #8B5A2B;
+    margin-bottom: 0.25rem;
+}
+
+.extractIconCircle .material-symbols-outlined {
+    font-size: 22px;
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 300,
+        'GRAD' 0,
+        'opsz' 24;
+}
+
+.extractCardTitle {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #3d3329;
+    letter-spacing: 0.02em;
+    margin: 0;
+}
+
+.extractAccent {
+    width: 32px;
+    height: 2.5px;
+    background: #C19A6B;
+    border-radius: 2px;
+    margin-bottom: 0.5rem;
+}
+
+.extractCardDesc {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.92rem;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #5a4d42;
+    margin: 0;
+}
+
+.extractDetail {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    padding-top: 0.5rem;
+}
+
+.detailLabel {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.55rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: #C19A6B;
+}
+
+.detailText {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.88rem;
+    font-weight: 400;
+    line-height: 1.55;
+    color: rgba(90, 77, 66, 0.75);
+}
+
+/* Micro row (Grind + Best For) */
+.extractMicro {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.85rem 0;
+    margin-top: 0.5rem;
+    border-top: 1px solid rgba(139, 90, 43, 0.1);
+    border-bottom: 1px solid rgba(139, 90, 43, 0.1);
+}
+
+.microItem {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.82rem;
+    font-weight: 500;
+    color: #5a4d42;
+}
+
+.microItem .material-symbols-outlined {
+    font-size: 16px;
+    color: #8B5A2B;
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 300,
+        'GRAD' 0,
+        'opsz' 20;
+}
+
+.extractIdeal {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: rgba(90, 77, 66, 0.6);
+    font-style: italic;
+    margin: 0;
+}
+
+.idealLabel {
+    display: block;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: #C19A6B;
+    font-style: normal;
+    margin-bottom: 0.2rem;
+}
+
+/* Flavor Meter */
+.flavorMeter {
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+    margin-top: auto;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(139, 90, 43, 0.08);
+}
+
+.meterRow {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+}
+
+.meterLabel {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.65rem;
+    font-weight: 600;
+    color: #6b5d52;
+    min-width: 52px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+.meterDots {
+    display: flex;
+    gap: 4px;
+}
+
+.dotFilled {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #8B5A2B;
+}
+
+.dotEmpty {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(139, 90, 43, 0.15);
+}
+
+/* ─── Find Your Method Section ─── */
+.fymSection {
+    padding: 1.5rem 0 2.5rem;
+}
+
+.fymHeader {
+    text-align: center;
+    max-width: 580px;
+    margin: 0 auto 3.5rem;
+}
+
+.fymTitle {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #3d3329;
+    letter-spacing: 0.06em;
+    margin-bottom: 1.25rem;
+}
+
+.fymSubtitle {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #6b5d52;
+    margin: 0;
+}
+
+.fymContentGrid {
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 1.25rem;
+    align-items: stretch;
+}
+
+.fymCards {
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+}
+
+.fymCard {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 0.6rem;
+    padding: 0.85rem 1rem;
+    border-radius: 14px;
+    background: #F5EFE6;
+    border: 1px solid rgba(193, 154, 107, 0.1);
+    box-shadow:
+        0 4px 20px rgba(139, 90, 43, 0.06),
+        0 1px 6px rgba(139, 90, 43, 0.03);
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.fymCardBody {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    flex: 1;
+}
+
+.fymCardTitle {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: #3d3329;
+    letter-spacing: 0.02em;
+    margin: 0 0 0.15rem;
+    transition: color 300ms ease-in-out;
+}
+
+.fymCardDesc {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #5a4d42;
+    margin: 0;
+    transition: color 300ms ease-in-out;
+}
+
+.fymTag {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.44rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 0.22rem 0.5rem;
+    border-radius: 999px;
+    background: #8B5A2B;
+    color: #fff;
+    white-space: nowrap;
+    align-self: center;
+    transition: all 300ms ease-in-out;
+}
+
+.fymMeta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.22rem;
+    margin-top: 0.25rem;
+}
+
+.fymMetaItem {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.56rem;
+    font-weight: 500;
+    color: rgba(90, 77, 66, 0.55);
+    background: rgba(139, 90, 43, 0.07);
+    padding: 0.15rem 0.38rem;
+    border-radius: 999px;
+    transition: all 300ms ease-in-out;
+}
+
+.fymMetaLabel {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #8B5A2B;
+    margin-right: 0.3rem;
+    transition: color 300ms ease-in-out;
+}
+
+.fymCardExtra {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    margin-top: 0.25rem;
+    padding-top: 0.3rem;
+    border-top: 1px solid rgba(139, 90, 43, 0.08);
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.58rem;
+    font-weight: 400;
+    font-style: italic;
+    color: rgba(90, 77, 66, 0.5);
+    transition: all 300ms ease-in-out;
+}
+
+.fymCardExtra .material-symbols-outlined {
+    font-size: 12px;
+    color: #C19A6B;
+    font-variation-settings: 'FILL' 1, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+    transition: color 300ms ease-in-out;
+}
+
+/* Card Hover — Heavy & Bold (French Press) */
+.fymBold:hover {
+    background: #7B4B2A;
+    border-color: #7B4B2A;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 36px rgba(123, 75, 42, 0.2);
+}
+
+.fymBold:hover .fymCardTitle,
+.fymBold:hover .fymCardDesc {
+    color: #fff;
+}
+
+.fymBold:hover .fymMetaItem {
+    background: rgba(255, 255, 255, 0.15);
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.fymBold:hover .fymMetaLabel {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.fymBold:hover .fymCardExtra {
+    color: rgba(255, 255, 255, 0.55);
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.fymBold:hover .fymCardExtra .material-symbols-outlined {
+    color: rgba(255, 255, 255, 0.55);
+}
+
+.fymBold:hover .fymTag {
+    background: #fff;
+    color: #7B4B2A;
+}
+
+/* Card Hover — Clean & Bright (V60 / Chemex) */
+.fymBright:hover {
+    background: #C9A46A;
+    border-color: #C9A46A;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 36px rgba(201, 164, 106, 0.25);
+}
+
+.fymBright:hover .fymCardTitle,
+.fymBright:hover .fymCardDesc {
+    color: #3d3329;
+}
+
+.fymBright:hover .fymMetaItem {
+    background: rgba(61, 51, 41, 0.12);
+    color: rgba(61, 51, 41, 0.75);
+}
+
+.fymBright:hover .fymMetaLabel {
+    color: rgba(61, 51, 41, 0.55);
+}
+
+.fymBright:hover .fymCardExtra {
+    color: rgba(61, 51, 41, 0.5);
+    border-color: rgba(61, 51, 41, 0.1);
+}
+
+.fymBright:hover .fymCardExtra .material-symbols-outlined {
+    color: rgba(61, 51, 41, 0.5);
+}
+
+.fymBright:hover .fymTag {
+    background: #fff;
+    color: #7B4B2A;
+}
+
+/* Card Hover — Strong & Intense (Espresso) */
+.fymIntense:hover {
+    background: #111111;
+    border-color: #111111;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.25);
+}
+
+.fymIntense:hover .fymCardTitle,
+.fymIntense:hover .fymCardDesc {
+    color: #fff;
+}
+
+.fymIntense:hover .fymMetaItem {
+    background: rgba(255, 255, 255, 0.12);
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.fymIntense:hover .fymMetaLabel {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.fymIntense:hover .fymCardExtra {
+    color: rgba(255, 255, 255, 0.45);
+    border-color: rgba(255, 255, 255, 0.08);
+}
+
+.fymIntense:hover .fymCardExtra .material-symbols-outlined {
+    color: rgba(255, 255, 255, 0.45);
+}
+
+.fymIntense:hover .fymTag {
+    background: #fff;
+    color: #111;
+}
+
+/* Card Hover — Versatile & Sweet (AeroPress) */
+.fymSweet:hover {
+    background: #8B5E34;
+    border-color: #8B5E34;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 36px rgba(139, 94, 52, 0.2);
+}
+
+.fymSweet:hover .fymCardTitle,
+.fymSweet:hover .fymCardDesc {
+    color: #fff;
+}
+
+.fymSweet:hover .fymMetaItem {
+    background: rgba(255, 255, 255, 0.15);
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.fymSweet:hover .fymMetaLabel {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.fymSweet:hover .fymCardExtra {
+    color: rgba(255, 255, 255, 0.55);
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.fymSweet:hover .fymCardExtra .material-symbols-outlined {
+    color: rgba(255, 255, 255, 0.55);
+}
+
+.fymSweet:hover .fymTag {
+    background: #F5EFE6;
+    color: #8B5E34;
+}
+
+/* Image Grid */
+.fymImageGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0.5rem;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 0;
+    min-height: 100%;
+}
+
+.fymImgWrap {
+    position: relative;
+    overflow: hidden;
+    border-radius: 16px;
+}
+
+.fymImgWrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 400ms ease;
+}
+
+.fymImgWrap:hover img {
+    transform: scale(1.03);
+}
+
+
+/* ─── Journey CTA Section ─── */
+@keyframes journeyFadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.journeySection {
+    position: relative;
+    overflow: hidden;
+    border-radius: 28px;
+    padding: 5.5rem 2rem;
+    margin: 3rem 0 2rem;
+    background:
+        linear-gradient(160deg, #2a1f14 0%, #1a120a 40%, #0d0906 100%);
+    text-align: center;
+    isolation: isolate;
+}
+
+/* grain texture overlay */
+.journeySection::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+    opacity: 0.03;
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* radial glow behind headline */
+.journeyGlow {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 350px;
+    border-radius: 50%;
+    background: radial-gradient(ellipse at center,
+            rgba(193, 154, 107, 0.12) 0%,
+            rgba(193, 154, 107, 0.04) 40%,
+            transparent 70%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.journeyContent {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.journeyTitle {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.6rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    line-height: 1.2;
+    background: linear-gradient(180deg,
+            #F5EFE6 0%,
+            #C19A6B 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: journeyFadeUp 0.8s ease-out both;
+}
+
+.journeyDesc {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.05rem;
+    font-weight: 400;
+    line-height: 1.85;
+    color: rgba(193, 170, 143, 0.65);
+    max-width: 520px;
+    margin: 0;
+    animation: journeyFadeUp 0.8s ease-out 0.1s both;
+}
+
+.journeyBtn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    color: #fff;
+    background: linear-gradient(135deg, #C19A6B 0%, #8B5A2B 100%);
+    background-size: 200% 200%;
+    border: none;
+    border-radius: 999px;
+    padding: 0.9rem 2rem;
+    cursor: pointer;
+    transition: all 350ms ease;
+    box-shadow: 0 4px 20px rgba(139, 90, 43, 0.25);
+    animation: journeyFadeUp 0.8s ease-out 0.2s both;
+}
+
+.journeyBtn .material-symbols-outlined {
+    font-size: 18px;
+    transition: transform 300ms ease;
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+.journeyBtn:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 32px rgba(193, 154, 107, 0.35);
+    background-position: 100% 50%;
+}
+
+.journeyBtn:hover .material-symbols-outlined {
+    transform: translateX(3px);
+}
+
+.journeyBtn:active {
+    transform: scale(0.98);
+}
+
+/* ─── Method Deep Dive Section ─── */
+.deepDiveSection {
+    padding: 2rem 0 3.5rem;
+}
+
+.deepDiveHeader {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.deepDiveTitle {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #3d3329;
+    letter-spacing: 0.06em;
+}
+
+.deepDiveGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+/* Image block */
+.deepDiveImageWrap {
+    position: relative;
+}
+
+.deepDiveImageInner {
+    position: relative;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow:
+        0 8px 32px rgba(139, 90, 43, 0.1),
+        0 2px 8px rgba(139, 90, 43, 0.05);
+    transition: box-shadow 400ms ease;
+}
+
+.deepDiveImageInner:hover {
+    box-shadow:
+        0 16px 48px rgba(139, 90, 43, 0.15),
+        0 4px 16px rgba(139, 90, 43, 0.08);
+}
+
+.deepDiveImg {
+    width: 100%;
+    height: 100%;
+    max-height: 650px;
+    object-fit: cover;
+    display: block;
+    transition: transform 400ms ease, filter 400ms ease;
+}
+
+.deepDiveImageInner:hover .deepDiveImg {
+    transform: scale(1.05);
+    filter: contrast(1.05) brightness(1.02);
+}
+
+.deepDiveImgOverlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top,
+            rgba(26, 22, 19, 0.6) 0%,
+            rgba(26, 22, 19, 0.15) 35%,
+            transparent 65%);
+    opacity: 0.7;
+    transition: opacity 400ms ease;
+    pointer-events: none;
+}
+
+.deepDiveImageInner:hover .deepDiveImgOverlay {
+    opacity: 1;
+}
+
+.deepDiveImgLabel {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 1.5rem;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.85);
+    letter-spacing: 0.04em;
+    transition: color 400ms ease;
+    pointer-events: none;
+}
+
+.deepDiveImageInner:hover .deepDiveImgLabel {
+    color: rgba(255, 255, 255, 1);
+}
+
+/* Content block */
+.deepDiveContent {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    padding-top: 0.15rem;
+}
+
+.deepDiveMethodTitle {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #3d3329;
+    letter-spacing: 0.03em;
+    margin: 0;
+}
+
+.deepDiveAccent {
+    width: 36px;
+    height: 3px;
+    background: #8B5A2B;
+    border-radius: 2px;
+}
+
+.deepDiveDesc {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.88rem;
+    font-weight: 400;
+    line-height: 1.55;
+    color: #5a4d42;
+    margin: 0;
+    max-width: 480px;
+}
+
+/* Recipe Card */
+.recipeCard {
+    background: rgba(245, 239, 230, 0.7);
+    border: 1px solid rgba(193, 154, 107, 0.15);
+    border-radius: 16px;
+    padding: 0.75rem 1rem;
+    margin-top: 0.15rem;
+    box-shadow:
+        0 2px 12px rgba(139, 90, 43, 0.04),
+        0 1px 4px rgba(139, 90, 43, 0.02);
+}
+
+.recipeCardHeader {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: #8B5A2B;
+    margin-bottom: 0.5rem;
+}
+
+.recipeCardHeader .material-symbols-outlined {
+    font-size: 18px;
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 300,
+        'GRAD' 0,
+        'opsz' 20;
+}
+
+.recipeStats {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.recipeStat {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.2rem;
+    padding: 0.5rem 0.35rem;
+    background: rgba(255, 255, 255, 0.6);
+    border: 1px solid rgba(193, 154, 107, 0.1);
+    border-radius: 12px;
+    transition: background 300ms ease, border-color 300ms ease;
+}
+
+.recipeStat:hover {
+    background: rgba(255, 255, 255, 0.9);
+    border-color: rgba(193, 154, 107, 0.25);
+}
+
+.recipeStatLabel {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.6rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #8B5A2B;
+}
+
+.recipeStatValue {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #3d3329;
+}
+
+/* Enhancement Row */
+.enhanceRow {
+    display: flex;
+    gap: 1.5rem;
+    padding-top: 0.65rem;
+    border-top: 1px solid rgba(139, 90, 43, 0.1);
+    margin-top: 0.25rem;
+}
+
+.enhanceItem {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.enhanceLabel {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: #C19A6B;
+}
+
+.enhanceValue {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.88rem;
+    font-weight: 500;
+    color: #5a4d42;
+}
+
+/* Brew Steps */
+.brewSteps {
+    background: rgba(245, 239, 230, 0.7);
+    border: 1px solid rgba(193, 154, 107, 0.15);
+    border-radius: 16px;
+    padding: 0.65rem 1rem;
+    box-shadow:
+        0 2px 12px rgba(139, 90, 43, 0.04),
+        0 1px 4px rgba(139, 90, 43, 0.02);
+}
+
+.brewStepsHeader {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: #8B5A2B;
+    margin-bottom: 0.4rem;
+}
+
+.brewStepsHeader .material-symbols-outlined {
+    font-size: 18px;
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 300,
+        'GRAD' 0,
+        'opsz' 20;
+}
+
+.stepsList {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    position: relative;
+}
+
+.stepItem {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.6rem;
+    padding: 0.2rem 0.4rem;
+    border-radius: 8px;
+    position: relative;
+    transition: background 300ms ease;
+}
+
+.stepItem:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.stepNumber {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+    border-radius: 50%;
+    background: #8B5A2B;
+    color: #fff;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.5rem;
+    font-weight: 700;
+    position: relative;
+    z-index: 1;
+}
+
+/* Connecting line between steps */
+.stepItem:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    left: calc(0.4rem + 10px);
+    top: calc(0.2rem + 20px);
+    width: 1.5px;
+    height: calc(100% - 20px);
+    background: rgba(139, 90, 43, 0.15);
+}
+
+.stepContent {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+    padding-top: 0.2rem;
+}
+
+.stepTitle {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.65rem;
+    font-weight: 600;
+    color: #3d3329;
+    letter-spacing: 0.02em;
+}
+
+.stepDesc {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: rgba(90, 77, 66, 0.7);
+}
+
+/* Reversed deep dive layout (content left, image right) */
+.deepDiveReversed {
+    direction: rtl;
+}
+
+.deepDiveReversed>* {
+    direction: ltr;
+}
+
+/* Tip Strip */
+.deepDiveTip {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    padding: 0.65rem 0.85rem;
+    background: rgba(193, 154, 107, 0.08);
+    border-left: 2.5px solid #C19A6B;
+    border-radius: 0 10px 10px 0;
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.78rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: rgba(90, 77, 66, 0.7);
+    font-style: italic;
+}
+
+.deepDiveTip .material-symbols-outlined {
+    font-size: 16px;
+    color: #C19A6B;
+    flex-shrink: 0;
+    margin-top: 1px;
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 300,
+        'GRAD' 0,
+        'opsz' 20;
+}
+
+/* Method Toggle Pills */
+.methodToggle {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.methodPill {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.6rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 0.4rem 1rem;
+    border-radius: 100px;
+    border: 1px solid rgba(193, 154, 107, 0.2);
+    background: rgba(193, 154, 107, 0.08);
+    color: #8B5A2B;
+    cursor: pointer;
+    transition: all 250ms ease;
+}
+
+.methodPill:hover {
+    background: rgba(193, 154, 107, 0.18);
+}
+
+.methodPillActive {
+    background: #8B5A2B;
+    color: #fff;
+    border-color: #8B5A2B;
+    box-shadow: 0 2px 8px rgba(139, 90, 43, 0.2);
+}
+
+.methodPillActive:hover {
+    background: #7a4e25;
+}
+
+/* Science Callout */
+.scienceCallout {
+    padding: 0.75rem 0.9rem;
+    background: rgba(139, 90, 43, 0.04);
+    border: 1px solid rgba(193, 154, 107, 0.15);
+    border-left: 3px solid #8B5A2B;
+    border-radius: 0 12px 12px 0;
+}
+
+.scienceCalloutHeader {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #8B5A2B;
+    margin-bottom: 0.35rem;
+}
+
+.scienceCalloutHeader .material-symbols-outlined {
+    font-size: 14px;
+    color: #8B5A2B;
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 300,
+        'GRAD' 0,
+        'opsz' 20;
+}
+
+.scienceCalloutText {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 1.55;
+    color: rgba(90, 77, 66, 0.7);
+    margin: 0;
+}
+
+/* Spec Grid (Dial-In) */
+.specGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+}
+
+.specItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.4rem 0.3rem;
+    background: rgba(139, 90, 43, 0.04);
+    border: 1px solid rgba(193, 154, 107, 0.12);
+    border-radius: 8px;
+    transition: transform 200ms ease;
+}
+
+.specItem:hover {
+    transform: translateY(-2px);
+}
+
+.specLabel {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: rgba(90, 77, 66, 0.5);
+}
+
+.specValue {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: #8B5A2B;
+}
+
+/* Bean Badges */
+.beanBadges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    margin-top: 0.15rem;
+}
+
+.beanBadge {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.6rem;
+    font-weight: 500;
+    padding: 0.2rem 0.55rem;
+    border-radius: 999px;
+    background: rgba(193, 154, 107, 0.12);
+    color: #8B5A2B;
+    border: 1px solid rgba(193, 154, 107, 0.2);
+    transition: all 200ms ease;
+}
+
+.beanBadge:hover {
+    background: rgba(193, 154, 107, 0.22);
+    transform: translateY(-1px);
+}
+
+/* ─── Espresso Styles ─── */
+.espressoStylesWrap {
+    margin-top: 1.5rem;
+    padding-top: 1.2rem;
+    border-top: 1px solid rgba(193, 154, 107, 0.15);
+}
+
+.espressoStylesTitle {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: #8B5A2B;
+    margin-bottom: 0.8rem;
+}
+
+.espressoStylesGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.75rem;
+}
+
+.styleCard {
+    background: rgba(255, 255, 255, 0.55);
+    border: 1px solid rgba(193, 154, 107, 0.12);
+    border-radius: 16px;
+    padding: 0.9rem 0.8rem 0.75rem;
+    box-shadow: 0 2px 8px rgba(139, 90, 43, 0.06);
+    transition: transform 250ms ease, box-shadow 250ms ease;
+}
+
+.styleCard:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 20px rgba(139, 90, 43, 0.1);
+}
+
+.styleCardHighlight {
+    border-color: rgba(139, 90, 43, 0.25);
+    box-shadow: 0 2px 12px rgba(139, 90, 43, 0.1), inset 0 0 0 1px rgba(193, 154, 107, 0.08);
+}
+
+.styleCardHead {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.55rem;
+}
+
+.styleCardTitle {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: #8B5A2B;
+    letter-spacing: 0.04em;
+}
+
+.styleCardSub {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.58rem;
+    font-weight: 400;
+    color: rgba(90, 77, 66, 0.5);
+    margin-top: 0.05rem;
+}
+
+.styleCardSpecs {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.styleSpec {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.62rem;
+}
+
+.styleSpec span:first-child {
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: rgba(90, 77, 66, 0.5);
+    font-size: 0.52rem;
+}
+
+.styleSpec span:last-child {
+    font-weight: 500;
+    color: #5a4d42;
+}
+
+.bodyIndicator {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-bottom: 0.45rem;
+}
+
+.bodyLabel {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.45rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: rgba(90, 77, 66, 0.5);
+}
+
+.bodyDots {
+    display: flex;
+    gap: 3px;
+}
+
+.bodyDot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(193, 154, 107, 0.18);
+    transition: background 200ms ease;
+}
+
+.bodyDotFilled {
+    background: #8B5A2B;
+}
+
+.styleCardDesc {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.62rem;
+    font-weight: 400;
+    line-height: 1.45;
+    color: rgba(90, 77, 66, 0.6);
+    margin: 0;
+}
+
+.espressoStylesNote {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.6rem;
+    font-weight: 400;
+    color: rgba(90, 77, 66, 0.4);
+    text-align: center;
+    margin-top: 0.65rem;
+    margin-bottom: 0;
+}
+
+/* ─── Responsive ─── */
+@media (max-width: 1024px) {
+    .heroInner {
+        grid-template-columns: 1.1fr 0.9fr;
+        min-height: 380px;
+    }
+
+    .heroText {
+        padding: 2.5rem 2rem 2rem 2.5rem;
+    }
+
+    .headline {
+        font-size: 3rem;
+    }
+
+    .subheadline {
+        font-size: 2.5rem;
+    }
+
+    .heroParagraph {
+        font-size: 1.1rem;
+    }
+
+    .basicsGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .heroInner {
+        grid-template-columns: 1fr;
+        min-height: auto;
+    }
+
+    .heroText {
+        padding: 2.5rem 2rem;
+        order: 2;
+    }
+
+    .heroImage {
+        min-height: 280px;
+        order: 1;
+    }
+
+    .imageOverlay {
+        background: linear-gradient(to bottom,
+                transparent 50%,
+                rgba(245, 239, 230, 0.6) 85%,
+                #F5EFE6 100%);
+    }
+
+    .headline {
+        font-size: 2.5rem;
+    }
+
+    .subheadline {
+        font-size: 2.25rem;
+    }
+
+    .heroParagraph {
+        font-size: 1rem;
+    }
+
+    .basicsGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .basicsTitle {
+        font-size: 1.75rem;
+    }
+
+    .waterGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .waterInner {
+        padding: 2.5rem 1.75rem;
+    }
+
+    .waterTitle {
+        font-size: 1.65rem;
+    }
+
+    .extractGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .extractCard {
+        border-right: none;
+        border-bottom: 1px solid rgba(139, 90, 43, 0.1);
+        border-radius: 0;
+    }
+
+    .extractCard:first-child {
+        border-radius: 20px 20px 0 0;
+    }
+
+    .extractCard:last-child {
+        border-radius: 0 0 20px 20px;
+        border-bottom: none;
+    }
+
+    .extractTitle {
+        font-size: 1.75rem;
+    }
+
+    .deepDiveGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .deepDiveReversed {
+        direction: ltr;
+    }
+
+    .deepDiveImg {
+        min-height: 340px;
+    }
+
+    .deepDiveMethodTitle {
+        font-size: 1.5rem;
+    }
+
+    .enhanceRow {
+        flex-wrap: wrap;
+    }
+
+    .espressoStylesGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .specGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .fymContentGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .fymTitle {
+        font-size: 1.75rem;
+    }
+
+    .fymImageGrid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .journeySection {
+        padding: 3.5rem 1.5rem;
+        border-radius: 20px;
+    }
+
+    .journeyTitle {
+        font-size: 1.75rem;
+    }
+
+    .journeyDesc {
+        font-size: 0.92rem;
+    }
+
+    .journeyGlow {
+        width: 300px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .heroText {
+        padding: 2rem 1.5rem;
+    }
+
+    .headline {
+        font-size: 2rem;
+    }
+
+    .subheadline {
+        font-size: 1.75rem;
+    }
+
+    .eyebrow {
+        font-size: 0.85rem;
+    }
+
+    .iconCircle {
+        width: 40px;
+        height: 40px;
+    }
+
+    .iconCircle .material-symbols-outlined {
+        font-size: 18px;
+    }
+
+    .basicsCard {
+        padding: 1.75rem 1.25rem;
+    }
+
+    .basicsTitle {
+        font-size: 1.5rem;
+    }
+
+    .waterInner {
+        padding: 2rem 1.25rem;
+    }
+
+    .waterCard {
+        padding: 1.75rem 1.25rem;
+    }
+
+    .waterTitle {
+        font-size: 1.5rem;
+    }
+
+    .extractCard {
+        padding: 2rem 1.25rem;
+    }
+
+    .extractTitle {
+        font-size: 1.5rem;
+    }
+
+    .deepDiveTitle {
+        font-size: 1.5rem;
+    }
+
+    .deepDiveMethodTitle {
+        font-size: 1.35rem;
+    }
+
+    .deepDiveImg {
+        min-height: 280px;
+    }
+
+    .recipeStats {
+        flex-wrap: wrap;
+    }
+
+    .recipeStat {
+        min-width: calc(33% - 0.5rem);
+    }
+
+    .recipeCard {
+        padding: 1.25rem;
+    }
+}

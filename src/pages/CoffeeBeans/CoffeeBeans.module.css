@@ -1,0 +1,1529 @@
+/* ─── Page Wrapper ─── */
+.coffeeBeans {
+    padding: 0 0 var(--spacing-xl);
+}
+
+/* ─── Hero Section ─── */
+.hero {
+    margin-top: 48px;
+    margin-bottom: var(--spacing-lg);
+    width: 100%;
+}
+
+.heroInner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 460px;
+    background-color: #F5EFE6;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow:
+        0 8px 40px rgba(139, 90, 43, 0.07),
+        0 2px 12px rgba(139, 90, 43, 0.04);
+    position: relative;
+}
+
+/* ─── Left Text Block ─── */
+.heroText {
+    padding: 3.5rem 3rem 3rem 3.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.eyebrow {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.15rem;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    color: #8B5A2B;
+    text-transform: uppercase;
+    margin-bottom: 1.25rem;
+    display: block;
+}
+
+.headline {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 4.5rem;
+    font-weight: 700;
+    line-height: 1.1;
+    color: #3d3329;
+    margin-bottom: 0;
+    letter-spacing: 0.02em;
+}
+
+.dash {
+    width: 40px;
+    height: 3px;
+    background-color: #8B5A2B;
+    border-radius: 2px;
+    margin: 1.25rem 0;
+}
+
+.subheadline {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 4rem;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #9a6f42;
+    margin-bottom: 1.75rem;
+    letter-spacing: 0.01em;
+}
+
+.heroParagraph {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.35rem;
+    font-weight: 400;
+    line-height: 1.85;
+    color: #4a3c30;
+    max-width: 420px;
+    margin-bottom: 2rem;
+}
+
+/* ─── Tag Row ─── */
+.tagRow {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.75rem 1.25rem;
+    background-color: rgba(250, 246, 241, 0.7);
+    border-radius: 14px;
+    border: 1px solid rgba(193, 154, 107, 0.12);
+    width: fit-content;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tagRow:hover {
+    background-color: rgba(250, 246, 241, 0.95);
+    box-shadow: 0 2px 12px rgba(139, 90, 43, 0.06);
+}
+
+.tagItem {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+}
+
+.tagIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    background-color: rgba(193, 154, 107, 0.1);
+    color: #8B5A2B;
+    flex-shrink: 0;
+}
+
+.tagIcon .material-symbols-outlined {
+    font-size: 20px;
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 300,
+        'GRAD' 0,
+        'opsz' 24;
+}
+
+.tagLabel {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #4a3c30;
+    letter-spacing: 0.015em;
+    white-space: nowrap;
+}
+
+.tagDivider {
+    display: block;
+    width: 28px;
+    height: 1px;
+    background-color: rgba(139, 90, 43, 0.18);
+    flex-shrink: 0;
+}
+
+/* ─── Right Image Block ─── */
+.heroImage {
+    position: relative;
+    overflow: hidden;
+}
+
+.heroImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.imageOverlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right,
+            #F5EFE6 0%,
+            rgba(245, 239, 230, 0.5) 18%,
+            rgba(245, 239, 230, 0.08) 40%,
+            transparent 65%);
+    pointer-events: none;
+}
+
+/* ─── Origin List (existing content) ─── */
+.originList {
+    list-style: none;
+    padding: 0;
+    margin: var(--spacing-sm) 0;
+}
+
+.originList li {
+    padding: var(--spacing-xs) 0;
+    padding-left: var(--spacing-md);
+    position: relative;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.originList li:last-child {
+    border-bottom: none;
+}
+
+.originList li::before {
+    content: '●';
+    position: absolute;
+    left: 0;
+    color: var(--color-accent);
+    font-size: 0.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* ─── Arabica vs Robusta Comparison ─── */
+.compareSection {
+    padding: 5rem 0;
+}
+
+.compareHeader {
+    text-align: center;
+    max-width: 640px;
+    margin: 0 auto 3.5rem;
+}
+
+.compareTitle {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #3d3329;
+    letter-spacing: 0.03em;
+    margin-bottom: 1.25rem;
+}
+
+.compareSubtext {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.8;
+    color: #6b5d52;
+    margin: 0;
+}
+
+.compareSubtext em {
+    font-style: italic;
+    color: #8B5A2B;
+    font-weight: 500;
+}
+
+.compareGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+/* ─── Comparison Cards ─── */
+.compareCard {
+    border-radius: 24px;
+    padding: 2.5rem;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.compareCard:hover {
+    transform: translateY(-3px);
+}
+
+.cardArabica {
+    background-color: rgba(255, 253, 250, 0.85);
+    box-shadow:
+        0 4px 24px rgba(139, 90, 43, 0.06),
+        0 1px 6px rgba(139, 90, 43, 0.03);
+    border: 1px solid rgba(193, 154, 107, 0.1);
+}
+
+.cardArabica:hover {
+    box-shadow:
+        0 12px 40px rgba(139, 90, 43, 0.1),
+        0 2px 10px rgba(139, 90, 43, 0.05);
+}
+
+.cardRobusta {
+    background-color: rgba(245, 235, 220, 0.6);
+    box-shadow:
+        0 4px 24px rgba(139, 90, 43, 0.06),
+        0 1px 6px rgba(139, 90, 43, 0.03);
+    border: 1px solid rgba(193, 154, 107, 0.08);
+}
+
+.cardRobusta:hover {
+    box-shadow:
+        0 12px 40px rgba(139, 90, 43, 0.1),
+        0 2px 10px rgba(139, 90, 43, 0.05);
+}
+
+/* Card Header */
+.cardHeader {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.25rem;
+}
+
+.cardIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background-color: rgba(193, 154, 107, 0.1);
+    color: #8B5A2B;
+    flex-shrink: 0;
+}
+
+.cardIcon .material-symbols-outlined {
+    font-size: 22px;
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 300,
+        'GRAD' 0,
+        'opsz' 24;
+}
+
+.cardTitle {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.35rem;
+    font-weight: 600;
+    color: #3d3329;
+    margin: 0;
+    letter-spacing: 0.02em;
+}
+
+.cardDescription {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 400;
+    line-height: 1.75;
+    color: #5a4d42;
+    margin-bottom: 1.75rem;
+}
+
+/* Info Rows */
+.infoRows {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1.75rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid rgba(193, 154, 107, 0.12);
+}
+
+.infoRow {
+    display: flex;
+    align-items: center;
+    gap: 0.875rem;
+}
+
+.infoIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 9px;
+    background-color: rgba(193, 154, 107, 0.08);
+    color: #8B5A2B;
+    flex-shrink: 0;
+}
+
+.infoIcon .material-symbols-outlined {
+    font-size: 18px;
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 300,
+        'GRAD' 0,
+        'opsz' 24;
+}
+
+.infoContent {
+    display: flex;
+    flex-direction: column;
+    gap: 0.125rem;
+}
+
+.infoLabel {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: #8B5A2B;
+}
+
+.infoValue {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #3d3329;
+}
+
+/* Flavor Tags */
+.flavorTags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid rgba(193, 154, 107, 0.12);
+}
+
+.flavorTag {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 0.4rem 0.875rem;
+    border-radius: 8px;
+    background-color: rgba(193, 154, 107, 0.1);
+    color: #8B5A2B;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.flavorTag:hover {
+    background-color: rgba(193, 154, 107, 0.2);
+    transform: translateY(-1px);
+}
+
+/* ─── Cultivation Section ─── */
+.cultivationSection {
+    padding: 5rem 0 4rem;
+}
+
+.cultivationGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3.5rem;
+    align-items: center;
+}
+
+/* Cultivation Image */
+.cultivationImage {
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow:
+        0 8px 40px rgba(139, 90, 43, 0.08),
+        0 2px 12px rgba(139, 90, 43, 0.04);
+    position: relative;
+}
+
+.cultivationImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    min-height: 400px;
+    transition: transform 0.4s ease;
+}
+
+.cultivationImage:hover img {
+    transform: scale(1.03);
+}
+
+/* Cultivation Content */
+.cultivationContent {
+    display: flex;
+    flex-direction: column;
+}
+
+.cultivationLabel {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.cultivationLabelIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(193, 154, 107, 0.15);
+    color: #8B5A2B;
+    flex-shrink: 0;
+}
+
+.cultivationLabelIcon .material-symbols-outlined {
+    font-size: 20px;
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 300,
+        'GRAD' 0,
+        'opsz' 24;
+}
+
+.cultivationLabelText {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    color: #8B5A2B;
+    text-transform: uppercase;
+}
+
+.cultivationHeading {
+    font-family: 'Outfit', sans-serif;
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #3d3329;
+    line-height: 1.25;
+    margin-bottom: 1.5rem;
+}
+
+.cherryUnderline {
+    text-decoration: underline;
+    text-decoration-color: #8B5A2B;
+    text-underline-offset: 6px;
+    text-decoration-thickness: 2.5px;
+}
+
+.cultivationBody {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.85;
+    color: #5a4d42;
+    margin-bottom: 2.25rem;
+}
+
+/* Metadata Highlights */
+.metaHighlights {
+    display: flex;
+    align-items: stretch;
+    gap: 2rem;
+}
+
+.metaBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    flex: 1;
+}
+
+.metaTop {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.25rem;
+}
+
+.metaIcon {
+    color: #8B5A2B;
+    display: flex;
+    align-items: center;
+}
+
+.metaIcon .material-symbols-outlined {
+    font-size: 20px;
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 300,
+        'GRAD' 0,
+        'opsz' 24;
+}
+
+.metaValue {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #3d3329;
+}
+
+.metaCaption {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: #6b5d52;
+    line-height: 1.5;
+    padding-left: 30px;
+}
+
+.metaDivider {
+    display: block;
+    width: 1px;
+    background-color: rgba(139, 90, 43, 0.15);
+    align-self: stretch;
+    flex-shrink: 0;
+}
+
+/* ─── Terroir & Origin Section ─── */
+.terroirSection {
+    padding: 4rem 0 5rem;
+}
+
+.terroirHeader {
+    text-align: center;
+    max-width: 580px;
+    margin: 0 auto 3rem;
+}
+
+.terroirTitle {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #3d3329;
+    letter-spacing: 0.03em;
+    margin-bottom: 1.25rem;
+}
+
+.terroirSubtext {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.8;
+    color: #6b5d52;
+    margin: 0;
+}
+
+.terroirGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.75rem;
+}
+
+/* Terroir Cards */
+.terroirCard {
+    background:
+        linear-gradient(145deg, rgba(193, 154, 107, 0.08), rgba(139, 90, 43, 0.04)),
+        rgba(255, 253, 250, 0.75);
+    border-radius: 24px;
+    padding: 2.25rem 2rem;
+    border: 1px solid rgba(193, 154, 107, 0.1);
+    box-shadow:
+        0 4px 20px rgba(139, 90, 43, 0.05),
+        0 1px 6px rgba(139, 90, 43, 0.03);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.terroirCard:hover {
+    transform: translateY(-4px);
+    box-shadow:
+        0 12px 40px rgba(139, 90, 43, 0.1),
+        0 2px 10px rgba(139, 90, 43, 0.05);
+}
+
+.terroirIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background-color: rgba(193, 154, 107, 0.15);
+    color: #8B5A2B;
+    margin-bottom: 1.25rem;
+    flex-shrink: 0;
+}
+
+.terroirIcon .material-symbols-outlined {
+    font-size: 22px;
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 300,
+        'GRAD' 0,
+        'opsz' 24;
+}
+
+.terroirCardTitle {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #3d3329;
+    margin: 0 0 0.875rem;
+    letter-spacing: 0.02em;
+}
+
+.terroirCardBody {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #5a4d42;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+.profileLabel {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.65rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: #8B5A2B;
+    margin-bottom: 0.625rem;
+    display: block;
+}
+
+.profileTags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+}
+
+.profileTag {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.725rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 0.35rem 0.8rem;
+    border-radius: 100px;
+    background-color: rgba(193, 154, 107, 0.1);
+    color: #8B5A2B;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    white-space: nowrap;
+}
+
+.profileTag:hover {
+    background-color: rgba(193, 154, 107, 0.2);
+    transform: translateY(-1px);
+}
+
+/* ─── Indian Coffee Section ─── */
+.indianSection {
+    padding: 4rem 0 5rem;
+}
+
+.indianGrid {
+    display: grid;
+    grid-template-columns: 1fr 1.15fr;
+    gap: 3rem;
+    align-items: stretch;
+}
+
+/* Indian Image */
+.indianImage {
+    border-radius: 24px;
+    overflow: hidden;
+    position: relative;
+    box-shadow:
+        0 10px 50px rgba(139, 90, 43, 0.12),
+        0 2px 12px rgba(139, 90, 43, 0.05);
+}
+
+.indianImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    min-height: 500px;
+}
+
+.indianImageOverlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top,
+            rgba(42, 33, 28, 0.7) 0%,
+            rgba(42, 33, 28, 0.2) 30%,
+            transparent 60%);
+    pointer-events: none;
+}
+
+.indianImageCaption {
+    position: absolute;
+    bottom: 1.75rem;
+    left: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.indianImageLabel {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.65rem;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.indianImageTitle {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+/* Indian Content */
+.indianContent {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.indianHeading {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 0.75rem;
+}
+
+.indianHeadingDark {
+    color: #3B2A1E;
+}
+
+.indianHeadingAccent {
+    color: #8B5A2B;
+}
+
+.indianBody {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.85;
+    color: #5a4d42;
+    margin-bottom: 1.25rem;
+}
+
+/* Feature Cards */
+.featureCard {
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 16px;
+    padding: 1.25rem 1.5rem;
+    border: 1px solid rgba(193, 154, 107, 0.1);
+    margin-bottom: 0.875rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.featureCard:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 24px rgba(139, 90, 43, 0.08);
+}
+
+.featureCardAccented {
+    border-left: 3px solid #8B5A2B;
+    background-color: rgba(193, 154, 107, 0.12);
+    box-shadow:
+        0 4px 20px rgba(139, 90, 43, 0.06),
+        0 1px 6px rgba(139, 90, 43, 0.03);
+}
+
+.featureCardInner {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.featureCardIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+    background-color: rgba(193, 154, 107, 0.15);
+    color: #8B5A2B;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.featureCardIcon .material-symbols-outlined {
+    font-size: 20px;
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 300,
+        'GRAD' 0,
+        'opsz' 24;
+}
+
+.featureCardText {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.featureCardTitle {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #3d3329;
+    margin: 0;
+}
+
+.featureCardBody {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 400;
+    line-height: 1.65;
+    color: #6b5d52;
+    margin: 0;
+}
+
+/* Region Chips */
+.regionChips {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.75rem;
+    margin-top: 0.875rem;
+}
+
+.regionChip {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.35rem;
+    padding: 1.25rem 1rem;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.85);
+    border: 1px solid rgba(193, 154, 107, 0.08);
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.regionChip:hover {
+    transform: translateY(-2px);
+    border-color: rgba(193, 154, 107, 0.25);
+    box-shadow: 0 4px 16px rgba(139, 90, 43, 0.06);
+}
+
+.regionChipName {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #3d3329;
+    letter-spacing: 0.02em;
+}
+
+.regionChipDetail {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 400;
+    color: #6b5d52;
+    line-height: 1.4;
+}
+
+/* ─── The Altitude Impact Section ─── */
+.altitudeSection {
+    padding: 4rem 0 5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.altitudeCard {
+    width: 100%;
+    max-width: 720px;
+    background: rgba(255, 253, 250, 0.7);
+    border-radius: 20px;
+    border: 1px solid rgba(193, 154, 107, 0.12);
+    box-shadow:
+        0 8px 40px rgba(139, 90, 43, 0.06),
+        0 2px 12px rgba(139, 90, 43, 0.03);
+    padding: 3rem 3.5rem;
+}
+
+.altitudeHeader {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.altitudeTitle {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #3d3329;
+    letter-spacing: 0.03em;
+    margin-bottom: 0.6rem;
+}
+
+.altitudeSubtext {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #C19A6B;
+    letter-spacing: 0.06em;
+    margin: 0;
+}
+
+/* Timeline */
+.timeline {
+    display: flex;
+    flex-direction: column;
+}
+
+.timelineItem {
+    display: grid;
+    grid-template-columns: 24px 1fr auto;
+    gap: 1.5rem;
+    align-items: start;
+    padding-bottom: 2rem;
+}
+
+.timelineItem:last-child {
+    padding-bottom: 0;
+}
+
+/* Timeline Track — vertical line + node */
+.timelineTrack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.timelineNode {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 2px solid #C19A6B;
+    background-color: #F5EFE6;
+    flex-shrink: 0;
+    margin-top: 4px;
+    position: relative;
+    z-index: 1;
+}
+
+.timelineItemActive .timelineNode {
+    background-color: #8B5A2B;
+    border-color: #8B5A2B;
+    box-shadow: 0 0 0 4px rgba(139, 90, 43, 0.12);
+}
+
+.timelineLine {
+    width: 2px;
+    flex-grow: 1;
+    background-color: rgba(193, 154, 107, 0.25);
+    margin-top: 4px;
+}
+
+/* Timeline Content */
+.timelineContent {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.timelineTitle {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #3d3329;
+    margin: 0;
+    letter-spacing: 0.02em;
+}
+
+.timelineItemActive .timelineTitle {
+    color: #8B5A2B;
+}
+
+.timelineElevation {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #C19A6B;
+    letter-spacing: 0.04em;
+}
+
+.timelineNotes {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #5a4d42;
+    margin: 0.15rem 0 0;
+}
+
+/* Timeline Icon */
+.timelineIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background-color: rgba(193, 154, 107, 0.1);
+    color: #C19A6B;
+    margin-top: 0;
+}
+
+.timelineIcon .material-symbols-outlined {
+    font-size: 22px;
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 300,
+        'GRAD' 0,
+        'opsz' 24;
+}
+
+.timelineItemActive .timelineIcon {
+    color: #8B5A2B;
+    background-color: rgba(139, 90, 43, 0.08);
+}
+
+/* ─── Bean Processing Methods Section ─── */
+.processingSection {
+    padding: 4rem 0 5rem;
+}
+
+.processingHeader {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 3rem;
+}
+
+.processingTitle {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #3d3329;
+    letter-spacing: 0.03em;
+    margin-bottom: 1rem;
+}
+
+.processingSubtext {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.8;
+    color: #6b5d52;
+    margin: 0;
+}
+
+.processingGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.processingCard {
+    background:
+        linear-gradient(160deg, rgba(255, 255, 255, 0.65), rgba(255, 253, 250, 0.5));
+    border-radius: 20px;
+    padding: 2.25rem 2rem;
+    border: 1px solid rgba(193, 154, 107, 0.08);
+    box-shadow:
+        0 4px 20px rgba(139, 90, 43, 0.04),
+        0 1px 6px rgba(139, 90, 43, 0.02);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.processingCard:hover {
+    transform: translateY(-4px);
+    box-shadow:
+        0 12px 40px rgba(139, 90, 43, 0.08),
+        0 2px 10px rgba(139, 90, 43, 0.04);
+}
+
+.processingCardIconWrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background-color: rgba(193, 154, 107, 0.12);
+    color: #8B5A2B;
+    margin-bottom: 1.25rem;
+}
+
+.processingCardIconWrap .material-symbols-outlined {
+    font-size: 24px;
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 300,
+        'GRAD' 0,
+        'opsz' 24;
+}
+
+.processingCardTitle {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #3d3329;
+    margin: 0 0 0.875rem;
+    letter-spacing: 0.02em;
+}
+
+.processingCardDesc {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #5a4d42;
+    margin: 0 0 1.25rem;
+}
+
+.processingDivider {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(193, 154, 107, 0.15);
+    margin-bottom: 1rem;
+}
+
+.cupImpactLabel {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.65rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: #8B5A2B;
+    margin-bottom: 0.75rem;
+    display: block;
+}
+
+.cupAttributes {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.cupAttribute {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.35rem 0;
+}
+
+.cupAttrLabel {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #8B5A2B;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+.cupAttrValue {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: #5a4d42;
+}
+
+/* ─── Closing CTA Section ─── */
+.ctaSection {
+    position: relative;
+    background-color: #8B5A2B;
+    border-radius: 28px;
+    padding: 5rem 2rem;
+    text-align: center;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    box-shadow:
+        0 12px 48px rgba(139, 90, 43, 0.2),
+        0 4px 16px rgba(139, 90, 43, 0.1);
+}
+
+.ctaOverlay {
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(ellipse at 30% 20%, rgba(193, 154, 107, 0.15) 0%, transparent 60%),
+        radial-gradient(ellipse at 80% 80%, rgba(61, 51, 41, 0.2) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.ctaContent {
+    position: relative;
+    z-index: 1;
+    max-width: 540px;
+    margin: 0 auto;
+}
+
+.ctaHeading {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #F5EFE6;
+    letter-spacing: 0.03em;
+    margin-bottom: 1.25rem;
+    line-height: 1.3;
+}
+
+.ctaBody {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.8;
+    color: rgba(245, 239, 230, 0.8);
+    margin: 0 0 2.25rem;
+}
+
+.ctaButton {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.85rem 2rem;
+    border-radius: 100px;
+    background-color: #F5EFE6;
+    color: #8B5A2B;
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.ctaButton:hover {
+    transform: scale(1.04);
+    background-color: #efe5d5;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.15);
+}
+
+.ctaArrow {
+    font-size: 20px;
+    transition: transform 0.3s ease;
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 300,
+        'GRAD' 0,
+        'opsz' 24;
+}
+
+.ctaButton:hover .ctaArrow {
+    transform: translateX(4px);
+}
+
+/* ─── Responsive ─── */
+@media (max-width: 1024px) {
+    .heroInner {
+        grid-template-columns: 1.1fr 0.9fr;
+        min-height: 380px;
+    }
+
+    .heroText {
+        padding: 2.5rem 2rem 2.5rem 2.5rem;
+    }
+
+    .headline {
+        font-size: 2.1rem;
+    }
+
+    .subheadline {
+        font-size: 1.9rem;
+    }
+
+    .processingGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        margin-top: 32px;
+    }
+
+    .heroInner {
+        grid-template-columns: 1fr;
+        min-height: auto;
+    }
+
+    .heroImage {
+        height: 280px;
+        order: -1;
+    }
+
+    .imageOverlay {
+        background: linear-gradient(to top,
+                #F5EFE6 0%,
+                rgba(245, 239, 230, 0.4) 30%,
+                transparent 70%);
+    }
+
+    .heroText {
+        padding: 2rem 1.75rem 2.5rem;
+    }
+
+    .headline {
+        font-size: 2rem;
+    }
+
+    .subheadline {
+        font-size: 1.75rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .heroParagraph {
+        max-width: 100%;
+    }
+
+    .tagRow {
+        flex-wrap: wrap;
+        gap: 0.75rem;
+    }
+
+    .compareSection {
+        padding: 3rem 0;
+    }
+
+    .compareGrid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .compareCard {
+        padding: 2rem;
+    }
+
+    .compareTitle {
+        font-size: 1.75rem;
+    }
+
+    .cultivationSection {
+        padding: 3rem 0 2rem;
+    }
+
+    .cultivationGrid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .cultivationImage img {
+        min-height: 280px;
+    }
+
+    .cultivationHeading {
+        font-size: 1.85rem;
+    }
+
+    .terroirSection {
+        padding: 3rem 0;
+    }
+
+    .terroirGrid {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+    }
+
+    .terroirTitle {
+        font-size: 1.75rem;
+    }
+
+    .indianSection {
+        padding: 3rem 0;
+    }
+
+    .indianGrid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .indianImage img {
+        min-height: 300px;
+    }
+
+    .indianHeading {
+        font-size: 1.75rem;
+    }
+
+    .regionChips {
+        grid-template-columns: 1fr;
+    }
+
+    .altitudeCard {
+        padding: 2rem 2rem;
+    }
+
+    .altitudeTitle {
+        font-size: 1.75rem;
+    }
+
+    .processingGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .processingTitle {
+        font-size: 1.75rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .heroText {
+        padding: 1.5rem 1.25rem 2rem;
+    }
+
+    .headline {
+        font-size: 1.7rem;
+    }
+
+    .subheadline {
+        font-size: 1.5rem;
+    }
+
+    .dash {
+        width: 32px;
+        margin: 1rem 0;
+    }
+
+    .compareCard {
+        padding: 1.5rem;
+    }
+
+    .cardTitle {
+        font-size: 1.15rem;
+    }
+
+    .terroirCard {
+        padding: 1.75rem 1.5rem;
+    }
+
+    .terroirCardTitle {
+        font-size: 1.1rem;
+    }
+
+    .indianHeading {
+        font-size: 1.5rem;
+    }
+
+    .featureCard {
+        padding: 1rem 1.25rem;
+    }
+
+    .altitudeCard {
+        padding: 1.5rem 1.25rem;
+    }
+
+    .altitudeTitle {
+        font-size: 1.5rem;
+    }
+
+    .processingCard {
+        padding: 1.75rem 1.5rem;
+    }
+
+    .processingTitle {
+        font-size: 1.5rem;
+    }
+
+    .ctaSection {
+        padding: 3.5rem 1.5rem;
+        border-radius: 20px;
+    }
+
+    .ctaHeading {
+        font-size: 1.5rem;
+    }
+}
